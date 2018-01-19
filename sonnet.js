@@ -4,6 +4,7 @@ var orphan = sonnet.indexOf("orphan");
 console.log(orphan);
 console.log(sonnet.length);
 console.log(sonnet.replace("winter", "yuletide"));
-var newSonnet = sonnet.replace(/the/gi, "a large");
+var newSonnet = sonnet.replace(/the /gi, "a large ");
 
 document.getElementById("sonnet").innerHTML = newSonnet;
+console.log(newSonnet.length);
